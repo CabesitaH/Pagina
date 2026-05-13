@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meraki - Bakery & Snacks</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Cormorant Garamond', serif;
+            background-color: #778899; 
+            scroll-behavior: smooth;
+        }
+
+        /* TÍTULOS: ADD8E6 (Azul claro) */
+        h1, h2, h3 {
+            font-family: "Brush Script MT", "Lucida Handwriting", cursive;
+            color: #ADD8E6; 
+            font-style: italic;
+            font-weight: normal;
+            margin: 0;
+        }
+
+        /* PRIMERA PANTALLA: LOGO CENTRADO SOBRE BLANCO */
+        .hero-spacer {
+            height: 100vh;
+            position: relative;
+            background-image: url('Logo.png'); 
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-color: #FFFFFF;
+        }
+
+        /* SEGUNDA SECCIÓN: GRIS PIZARRA */
+        .content {
+            position: relative;
+            z-index: 2;
+            background-color: #778899; 
+            padding: 60px 20px 80px 20px;
+            box-shadow: 0 -20px 40px rgba(0,0,0,0.2);
+            border-top: 4px solid #ADD8E6;
+            text-align: center;
+        }
+
+        .main-title {
+            font-size: 7.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .sub-title {
+            font-size: 3.5rem;
+            margin-bottom: 60px;
+            color: #ffffff;
+            opacity: 0.9;
+        }
+
+        .grid-snacks {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .snack-card {
+            background: rgba(255, 255, 255, 0.15); 
+            border-radius: 25px;
+            padding: 40px;
+            text-align: center;
+            border: 1px solid #ADD8E6;
+            transition: all 0.3s ease;
+        }
+
+        .snack-card:hover {
+            transform: translateY(-15px);
+            background: rgba(255, 255, 255, 0.25);
+        }
+
+        .snack-card h3 { 
+            font-size: 3.2rem; 
+            margin-bottom: 15px;
+        }
+
+        .snack-card p {
+            font-weight: 600;
+            color: #000000;
+            font-size: 1.4rem;
+            line-height: 1.2;
+        }
+
+        /* SECCIÓN CONTACTO ACTUALIZADA */
+        .contact-section {
+            margin-top: 100px;
+            padding: 40px;
+            border-top: 1px solid rgba(0,0,0,0.1);
+        }
+
+        .contact-section p {
+            font-size: 1.7rem;
+            font-weight: 600;
+            color: #000000;
+            margin-bottom: 15px;
+        }
+
+        .instagram-link {
+            color: #ADD8E6;
+            text-decoration: none;
+            font-family: "Brush Script MT", cursive;
+            font-size: 3.8rem; /* Un poco más grande para resaltar */
+            transition: all 0.3s;
+        }
+
+        .instagram-link:hover {
+            color: #ffffff;
+            text-shadow: 0 0 15px rgba(173, 216, 230, 0.8);
+        }
+
+        footer { 
+            margin-top: 50px; 
+            color: #2c3e50; 
+            padding-bottom: 40px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero-spacer"></div>
+
+    <div class="content">
+        
+        <h1 class="main-title">Meraki</h1>
+        <h2 class="sub-title">Selección Bakery</h2>
+        
+        <div class="grid-snacks">
+            <div class="snack-card">
+                <h3>Pan Artesanal</h3>
+                <p>Recetas tradicionales Meraki horneadas cada mañana con masa madre.</p>
+            </div>
+            <div class="snack-card">
+                <h3>Cookies Premium</h3>
+                <p>El balance perfecto de texturas con el sello distintivo de nuestra bakery.</p>
+            </div>
+            <div class="snack-card">
+                <h3>Mix Energético</h3>
+                <p>Frutos seleccionados para acompañar tu día con energía Meraki.</p>
+            </div>
+            <div class="snack-card">
+                <h3>Repostería Fina</h3>
+                <p>Pequeños bocados creados con amor y dedicación en nuestra cocina.</p>
+            </div>
+            <div class="snack-card">
+                <h3>Snacks Salados</h3>
+                <p>Crujientes y frescos, ideales para cualquier momento Meraki.</p>
+            </div>
+            <div class="snack-card">
+                <h3>Ediciones Especiales</h3>
+                <p>Creaciones únicas de temporada que solo Meraki Bakery puede ofrecer.</p>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <p>¿Quieres ver más de nuestro proceso?</p>
+            <!-- NUEVO ENLACE ACTUALIZADO -->
+            <a href="https://www.instagram.com/official_merakibakery/" target="_blank" class="instagram-link">
+                Sigue a official_merakibakery en Instagram
+            </a>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 &bull; Meraki Bakery &bull; Hecho con alma</p>
+        </footer>
+    </div>
+
+</body>
+</html>
